@@ -17,7 +17,7 @@ $(function()
 
 function changeImg(){
 var myimg = document.getElementById("randombanner");
-var imgarray = ["src/ads/buysausage.gif", "src/ads/hotdogsad.gif", "src/ads/dogfood.jpeg"];
+var imgarray = ["src/ads/buysausage.gif", "src/ads/hotdogsad.gif", "src/ads/dogfood.jpeg", "src/ads/nonormalgame.png", "src/ads/sharpteeth.png"];
 var imgindex = Math.floor(Math.random() * imgarray.length);
 console.log(imgindex);
 

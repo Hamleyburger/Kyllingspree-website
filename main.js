@@ -6,10 +6,10 @@ $(function()
 {
     $("#mylogo").hover(
         function() {
-            $(this).attr("src", "src/Kyllogo.gif");
+            $(this).attr("src", "src/navimgs/Kyllogo.gif");
         },
         function() {
-            $(this).attr("src", "src/Kyllogo.png");
+            $(this).attr("src", "src/navimgs/Kyllogo.png");
         }
     );
 });

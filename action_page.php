@@ -15,5 +15,5 @@ if(isset($_POST['submit']))
     
     /*using variables in already existing functions*/
     mail($mailTo, $subject, $txt, $headers);
-    header("Location: contact.html?mailsend");
+    header("Location: contact.php?mailsend");
 }

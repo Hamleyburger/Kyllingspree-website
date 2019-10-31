@@ -25,5 +25,9 @@ console.log(imgindex);
 
 }
 
+function formAlert() {
+  alert("Apologies! Kylling is currently closed to new requests.");
+}
+
 changeImg();
                     

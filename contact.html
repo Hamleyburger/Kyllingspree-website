@@ -75,7 +75,6 @@
             </a>
             
                     
-                    <img src="src/photos/skulls.jpg" style="border: 20px solid green; margin-bottom: 80px; max-width: 100%;"> 
                     <h1 style="font-weight: bold">Contact</h1>
                         
                             
@@ -83,19 +82,21 @@
                     <div id="allcatalogues">
 
                         
-                        <form action="action_page.php" method="post">
-
+                        <!-- <form action="action_page.php" method="post">
+                        I tried making a php page with code to send me an e-mail, but it doesn't work-->
+                        <form style="min-width: 300px;" class="responsive">
      
 
                                 Name: <br>
-                                <input type="text" placeholder="Erizabethu" name="name"><br>
+                                <input class="linefield" type="text" placeholder="Erizabethu" name="name"><br>
                                 e-mail: <br>
-                                <input type="text" placeholder="my@e-mail.com" name="email"><br>
+                                <input class="linefield" type="text" placeholder="my@e-mail.com" name="email"><br>
                                 Subject: <br>
-                                <input type="text" placeholder="Subject" name="subject"><br>
+                                <input class="linefield" type="text" placeholder="Subject" name="subject"><br>
                                 Message: <br>
-                                <textarea placeholder="Your message" name="message"></textarea><br>
-                                <button type="submit" name="submit">Send</button>
+                                <textarea id="boxfield" placeholder="Your message" name="message"></textarea><br>
+                                <button type="submit" name="submit" onclick="formAlert()">Send</button>
+     
                             
                 
     
@@ -105,6 +106,7 @@
                     </div>
 
             
+                    <img src="src/photos/poisontoadstool.jpg" style="border: 3px solid green; margin-bottom: 80px; max-width: 100%; margin-top: 100px;"> 
                 
 
         </div>

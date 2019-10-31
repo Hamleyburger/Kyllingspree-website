@@ -210,3 +210,11 @@ opacity: 1;
     
     padding: 20px 20px 50px 20px;
 }
+
+.linefield {
+    min-width: 300px;
+}
+#boxfield{
+    min-width: 300px;
+    min-height: 100px;
+}

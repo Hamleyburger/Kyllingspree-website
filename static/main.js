@@ -6,10 +6,10 @@ $(function()
 {
     $("#mylogo").hover(
         function() {
-            $(this).attr("src", "src/navimgs/Kyllogo.gif");
+            $(this).attr("src", "/static/src/navimgs/Kyllogo.gif");
         },
         function() {
-            $(this).attr("src", "src/navimgs/Kyllogo.png");
+            $(this).attr("src", "/static/src/navimgs/Kyllogo.png");
         }
     );
 });
@@ -17,7 +17,7 @@ $(function()
 
 function changeImg(){
 var myimg = document.getElementById("randombanner");
-var imgarray = ["src/ads/buysausage.gif", "src/ads/hotdogsad.gif", "src/ads/dogfood.jpeg", "src/ads/nonormalgame.png", "src/ads/sharpteeth.png"];
+var imgarray = ["/static/src/ads/buysausage.gif", "/static/src/ads/hotdogsad.gif", "/static/src/ads/dogfood.jpeg", "/static/src/ads/nonormalgame.png", "/static/src/ads/sharpteeth.png"];
 var imgindex = Math.floor(Math.random() * imgarray.length);
 console.log(imgindex);
 

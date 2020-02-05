@@ -17,7 +17,7 @@ $(function()
 
 function changeImg(){
 var myimg = document.getElementById("randombanner");
-var imgarray = ["/static/src/ads/buysausage.gif", "/static/src/ads/hotdogsad.gif", "/static/src/ads/dogfood.jpeg", "/static/src/ads/nonormalgame.png", "/static/src/ads/sharpteeth.png"];
+var imgarray = ["/static/src/ads/hotdogsad.gif", "/static/src/ads/buysausage.gif", "/static/src/ads/dogfood.jpeg", "/static/src/ads/nonormalgame.png", "/static/src/ads/sharpteeth.png"];
 var imgindex = Math.floor(Math.random() * imgarray.length);
 console.log(imgindex);
 
@@ -30,4 +30,4 @@ function formAlert() {
 }
 
 changeImg();
-                    
+

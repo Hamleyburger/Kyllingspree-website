@@ -26,7 +26,7 @@ body {
 
 
 .mynav{
-   
+
     background-color: rgba(147, 213, 193, 0.8);
     background-size: cover;
     background-position: top;
@@ -56,7 +56,7 @@ body {
 
 #navlist > li {
     border: 2px solid rgb(89, 116, 108);
-    width: 125px;            
+    width: 125px;
     align-self: center;
     background-color: rgb(185, 229, 216);
     font-size: 20px;
@@ -68,7 +68,7 @@ body {
 #navlist > li:hover {
     border: 2px solid rgb(89, 116, 108);
     background-color: rgb(175, 219, 206);
-    
+
 }
 .navbar-brand {
  margin-right: auto;
@@ -84,22 +84,22 @@ body {
 
 /*Parent to banner and bodyimage*/
 #bodytext{
-    
+
     display: flex;
     align-content: space-between;
     flex-direction: column;
     padding-top: 0%;
     padding-left: 5%;
     padding-right: 5%;
-    
+
     font-family: 'courier new';
     padding-bottom: 40%;
     align-items: center;
-                
+
 }
 
-.banner {               
-            
+.banner {
+
     width: 100%;
     max-width: 700px;
     height: auto;
@@ -107,7 +107,7 @@ body {
 }
 
 .bannerlink{
-    
+
     margin-bottom: 10%;
     margin-top: 10%;
 }
@@ -116,19 +116,19 @@ body {
 
   padding: 10px 20px 10px 20px;
   background-color: rgba(147, 213, 193, 0.8);
-  
+
  }
- 
+
 @media(min-width:700px){
- 
- 
+
+
  .catalogue{
   display: flex;
   justify-content: space-around;
- 
- 
+
+
  }
- 
+
  /*end of @media(min-width:700*/
 }
 
@@ -149,7 +149,7 @@ body {
  margin-top: 20px;
  overflow: hidden;
  background-color: rgb(85, 201, 252);
- 
+
  /* flex basis is a flexy name for width*/
 }
 
@@ -173,7 +173,7 @@ opacity: 1;
 
 .service:hover div
 {
- 
+
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -187,7 +187,7 @@ opacity: 1;
   padding-right: 7px;
   font-size: large;
    background-color: rgba(192, 255, 230, 0.4);
-  
+
 }
 /* Bottom left text */
 .bottom-left {
@@ -200,14 +200,14 @@ opacity: 1;
   text-align: left;
   font-size: 14px;
   font-weight: 600;
-  
+
 }
 
 .servicedescription {
     display: flex;
     flex-direction: column;
     align-content: space-between;
-    
+
     padding: 20px 20px 50px 20px;
 }
 
@@ -217,4 +217,19 @@ opacity: 1;
 #boxfield{
     min-width: 300px;
     min-height: 100px;
+}
+
+
+#pricingtable td{
+border: 2px solid rgb(89, 116, 108);
+border-collapse: collapse;
+padding-left: 10px;
+padding-right: 10px;
+
+}
+
+#pricingtable{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: rgb(228, 244, 239);
 }

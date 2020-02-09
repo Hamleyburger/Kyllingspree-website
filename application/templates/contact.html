@@ -5,41 +5,64 @@
 {% block main %}
 
 
-                    <h1 style="font-weight: bold">Contact</h1>
+<h1 style="font-weight: bold">Contact</h1>
 
 
-                    <!--SELECTION OF IMAGES-->
-                    <div id="allcatalogues">
-
-
-                        <!-- <form action="action_page.php" method="post">
-                        I tried making a php page with code to send me an e-mail, but it doesn't work-->
-                        <form style="min-width: 300px;" class="responsive">
-
-
-                                Name: <br>
-                                <input class="linefield" type="text" placeholder="Erizabethu" name="name"><br>
-                                e-mail: <br>
-                                <input class="linefield" type="text" placeholder="my@e-mail.com" name="email"><br>
-                                Subject: <br>
-                                <input class="linefield" type="text" placeholder="Subject" name="subject"><br>
-                                Message: <br>
-                                <textarea id="boxfield" placeholder="Your message" name="message"></textarea><br>
-                                <button type="submit" name="submit" onclick="formAlert()">Send</button>
+<!--SELECTION OF IMAGES-->
 
 
 
+<div class="container-fluid">
+        <div class="row justify-content-center">
+
+        <form action="/contact" class="responsive needs-validation col-lg-8 col-md-10" method="POST" novalidate>
+                
+                
+                <div class="form-group">
+                        <label for="inputEmail">e-mail:</label>
+                        <input required type="email" id="inputEmail" name="email" class="form-control">
+                        <div class="invalid-feedback">You must provide your e-mail</div>
+                </div>
+                <div class="form-group">
+                        <label for="inputSubject">Subject:</label>
+                        <input required type="text" id="inputSubject" name="name" class="form-control" autofocus
+                        onfocus="this.select()">
+                        <div class="invalid-feedback">You must provide a subject</div>
+                </div>
+                <div class="form-group">
+                        <label for="inputMessage">Your message:</label>
+                        <textarea required type="text" id="inputMessage" name="message" class="form-control"></textarea>
+                        <div class="invalid-feedback">You must write a message</div>
+                </div>
+                
+                <button id="contactSubmitBtn" class="btn btn-primary" type="submit">Submit</button>
+                
+                
+                
+        </form>
+</div>
+        
+        
+        
+        <img src="/static/src/photos/poisontoadstool.jpg" alt="A photo of Kylling smiling"
+        style="border: 3px solid green; margin-bottom: 80px; max-width: 100%; margin-top: 100px;">
 
 
+</div>
 
-                        </form>
-                    </div>
+<script>
 
+        /* nice looking client side validation */
+        var form = document.querySelector('.needs-validation')
+        form.addEventListener('submit', function (event) {
+                if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+        })
 
-                    <img src="/static/src/photos/poisontoadstool.jpg" alt="A photo of Kylling smiling" style="border: 3px solid green; margin-bottom: 80px; max-width: 100%; margin-top: 100px;">
-
-
-        </div>
+</script>
 
 
 

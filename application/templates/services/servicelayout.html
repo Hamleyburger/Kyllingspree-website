@@ -4,19 +4,21 @@
 {% block main %}
 
 
-            <!--DESCRIPTION OF SPECIFIC SERVICE-->
-            <div id="allcatalogues">
+<!--DESCRIPTION OF SPECIFIC SERVICE-->
+<div id="allcatalogues" class="container-fluid">
+
+    <div class="servicedescription">
+        {% block service %}{% endblock %}
+
+        <img src="/static/src/photos/{{image}}" alt="A picture of Kylling doing something" class="responsive"
+            style="margin-top: 30px;">
 
 
-                {% block service %}{% endblock %}
+    </div>
 
+</div>
 
-
-                </div>
-
-            </div>
-
-        </div>
+</div>
 
 
 {% endblock %}

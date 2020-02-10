@@ -21,24 +21,30 @@ def contact():
 # Routes for all services in /services
 @app.route("/ballreminders")
 def ballreminders():
-    return render_template("services/ballreminders.html")
+    image = "ballremind2.jpg"
+    return render_template("services/ballreminders.html", image=image)
 
 @app.route("/barking")
 def barking():
-    return render_template("services/barking.html")
+    image = "kylbark.jpg"
+    return render_template("services/barking.html", image=image)
 
 @app.route("/biting")
 def biting():
-    return render_template("services/biting.html")
+    image = "Kylbite.JPG"
+    return render_template("services/biting.html", image=image)
 
 @app.route("/chilling")
 def chilling():
-    return render_template("services/chilling.html")
+    image = "kylchill3.jpg"
+    return render_template("services/chilling.html", image=image)
 
 @app.route("/digging")
 def digging():
-    return render_template("services/digging.html")
+    image = "kyldiglarge.jpg"
+    return render_template("services/digging.html", image=image)
 
 @app.route("/pulling")
 def pulling():
-    return render_template("services/pulling.html")
+    image = "kylpulllarge.jpg"
+    return render_template("services/pulling.html", image=image)

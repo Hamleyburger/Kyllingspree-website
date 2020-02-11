@@ -7,12 +7,16 @@
 <!--DESCRIPTION OF SPECIFIC SERVICE-->
 <div id="allcatalogues" class="container-fluid">
 
-    <div class="servicedescription">
-        {% block service %}{% endblock %}
-
-        <img src="/static/src/photos/{{image}}" alt="A picture of Kylling doing something" class="responsive"
-            style="margin-top: 30px;">
-
+    <div class="container servicedescription">
+        <div class="row">
+            {% block service %}{% endblock %}
+        </div>
+            
+            
+        <div class="row justify-content-center">
+            <img src="/static/src/photos/{{image}}" alt="A picture of Kylling doing something" class="responsive"
+                style="margin-top: 30px;">
+        </div>
 
     </div>
 

@@ -1,5 +1,6 @@
 {% extends "layout.html" %}
 
+{% block title %}{{ title }}{% endblock %}
 
 {% block main %}
 
@@ -8,11 +9,16 @@
 <div id="allcatalogues" class="container-fluid">
 
     <div class="container servicedescription">
+
+
         <div class="row">
-            {% block service %}{% endblock %}
+            <h1 style="font-weight: bold">{{ title }}</h1>
         </div>
-            
-            
+        <div class="row">
+            <p>
+                {{ text }}
+            </p>
+        </div>
         <div class="row justify-content-center">
             <img src="/static/src/photos/{{image}}" alt="A picture of Kylling doing something" class="responsive"
                 style="margin-top: 30px;">

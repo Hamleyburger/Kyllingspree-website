@@ -3,4 +3,4 @@ from flask import Flask
 app = Flask(__name__)
 
 from application import views
-from application import admin_views
+from application import service_views

@@ -14,7 +14,20 @@ def services():
 def pricing():
     return render_template("pricing.html")
 
-@app.route("/contact")
+@app.route("/contact", methods=["GET", "POST"])
 def contact():
+
+    if request.method == "POST":
+
+        req = request.form
+
+        email = req.get("email")
+        subject = req.get("subject")
+        message = req.get("message")
+
+        print(req)
+
+        return render_template("submitted.html", email=email, subject=subject, message=message)
+
     return render_template("contact.html")
 

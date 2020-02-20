@@ -261,3 +261,18 @@ padding-right: 10px;
     margin-bottom: 40px;
     background-color: rgb(228, 244, 239);
 }
+
+
+
+.mycontainer{
+    max-width: var(--max-content-width);
+}
+.myrow{
+    margin: 0;
+}
+.mycol{
+    border: 2px solid rgb(89, 116, 108);
+    padding: 20px;
+    background-color: rgb(228, 244, 239);
+
+}

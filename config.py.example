@@ -1,0 +1,9 @@
+#!/usr/bin/env python
+
+"""remove 'example' extension of this file
+and add appropriate e-mails and passwords
+to the dictionary below:"""
+
+mySecrets = {'sender_email': 'foo',
+            'password': 'bar',
+            'rec_email': 'baz',}

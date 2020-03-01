@@ -40,16 +40,20 @@ body {
 
 
 #myfooter{
-   color: #555;
+    color: #555;
     background-color: rgba(147, 213, 193, 0.8);
     background-size: cover;
     background-position: top;
     overflow: hidden;
     text-align: center;
-    padding-bottom: 30px;
-    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
+.footeritems{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
 
 #spreecontainer {
  text-align: center;

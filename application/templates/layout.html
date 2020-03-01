@@ -59,13 +59,13 @@
                 <div class="collapse navbar-collapse" id="navbarMenu">
                     <ul class="navbar-nav ml-auto mt-4 mt-md-0 mb-5 mb-md-1" id="navlist">
                         <li class="nav-item">
-                            <a href="services" class="nav-link">Service</a>
+                            <a href="services" class="nav-link">{{ text["subtitles.services"] }}</a>
                         </li>
                         <li class="nav-item">
-                             <a href="pricing" class="nav-link">Pricing</a>
+                             <a href="pricing" class="nav-link">{{ text["subtitles.pricing"] }}</a>
                         </li>
                         <li class="nav-item">
-                             <a href="contact" class="nav-link">Contact</a>
+                             <a href="contact" class="nav-link">{{ text["subtitles.contact"] }}</a>
                         </li>
                     </ul>
                 </div>
@@ -88,8 +88,20 @@
 
     <footer>
         <div class="container-fluid fixed-bottom" id="myfooter">
-            site design / logo © 2019 Hamleyburger & Dog Inc.
-
+            <div class="row">
+                <div class="col-md-8 col-sm-12 footeritems">
+                    {{ text["footer"] }}
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <a href="/?language=da">
+                        <img class="footeritems" src="/static/src/navimgs/daflag.png" height="20" width="35">
+                    </a>
+                    <a href="/?language=en">
+                        <img class="footeritems" src="/static/src/navimgs/enflag.png" height="20" width="35">
+                    </a>
+                </div>
+            </div>
+            
         </div>
     </footer>
 

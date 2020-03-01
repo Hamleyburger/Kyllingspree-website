@@ -3,13 +3,23 @@
 from application import app
 from flask import Flask, jsonify, redirect, render_template, request, url_for
 
+import texts
 import smtplib
 import config as cfg
 
+#Load text in the right language:texts.getText("")
+
+lan = texts.lan_code
+print(lan)
 
 @app.route("/")
 def index():
+    lan_code = request.args.get("language")
+    texts.setLan(lan_code)
     return render_template("index.html")
+
+
+
 
 @app.route("/services")
 def services():

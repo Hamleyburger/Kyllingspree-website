@@ -1,84 +1,90 @@
 {% extends "layout.html" %}
 
-{% block title %}Kylling's services{% endblock %}
+{% block title %}{{ text["subtitles.services"] }}{% endblock %}
 
 {% block main %}
 
 
 
-            <div class="servicedescription">
+<div class="servicedescription">
 
 
-            <h1 style="font-weight: bold">Services</h1>
+    <h1 style="font-weight: bold">{{ text["subtitles.services"] }}</h1>
+
+    <p>
+        {{ text["services.introduction"] }}
+    </p>
 
 
-            Everyday life is full of dangerous animals. You may not agree. You may not be aware. The fact is that many animals coming your way are secretly out to get you. I take care of it, thus creating more time for all the enjoyable things - ball-throwing, power-walking or cozying up in the sofa.
+</div>
+
+<!--SELECTION OF IMAGES-->
+<div id="allcatalogues">
 
 
+    <div class="catalogue">
 
-            </div>
-
-            <!--SELECTION OF IMAGES-->
-            <div id="allcatalogues">
-
-
-                <div class="catalogue">
-
-                    <!--Barking-->
-                    <div class="service">
-                        <a href="barking"><img src="/static/src/photos/kylbark2.jpg" class="img-fluid" alt="Responsive image" id="serviceimg"></a>
-                        <div class="top-left"><b>Barking</b></div>
-                        <div class="bottom-left">Teach them a lesson... </div>
-                    </div>
-
-                    <!--Digging-->
-                    <div class="service">
-                        <a href="digging"><img src="/static/src/photos/kyldig.jpg" class="img-fluid" alt="Kylling digging" id="serviceimg"></a>
-                        <div class="top-left"><b>Digging</b></div>
-                        <div class="bottom-left">Critters live in holes. I dig them out...</div>
-                    </div>
-
-                    <!--Ball reminders-->
-                    <div class="service">
-                        <a href="ballreminders"><img src="/static/src/photos/ballremind.jpg" class="img-fluid" alt="Extermination image" id="serviceimg"></a>
-                        <div class="top-left"><b>Ball reminders</b></div>
-                        <div class="bottom-left">Oh! How'd that get there?</div>
-                    </div>
-
-                </div>
-
-                <div class="catalogue">
-
-
-
-
-
-                    <!--Pulling-->
-                    <div class="service">
-                        <a href="pulling"><img src="/static/src/photos/kylpull.jpg" class="img-fluid" alt="Responsive image" id="serviceimg"></a>
-                        <div class="top-left"><b>Pulling</b></div>
-                        <div class="bottom-left">For that extra speed, vigor and GO! </div>
-                    </div>
-
-                    <!--Biting-->
-                    <div class="service">
-                        <a href="biting"><img src="/static/src/photos/Kylbite.JPG" class="img-fluid" alt="Responsive image" id="serviceimg"></a>
-                        <div class="top-left"><b>Biting</b></div>
-                        <div class="bottom-left">Cats, moles, garbage men... </div>
-                    </div>
-
-                    <!--Chilling-->
-                    <div class="service">
-                        <a href="chilling"><img src="/static/src/photos/Kylling.jpg" class="img-fluid" alt="Responsive image" id="serviceimg"></a>
-                        <div class="top-left"><b>Chilling</b></div>
-                        <div class="bottom-left">What we do when we do like we do what we like </div>
-                    </div>
-
-                </div>
-
-            </div>
-
+        <!--Barking-->
+        <div class="service">
+            <a href="barking"><img src="/static/src/photos/kylbark2.jpg" class="img-fluid" alt="Responsive image"
+                    id="serviceimg"></a>
+            <div class="top-left"><b>{{ text["services.title.barking"] }}</b></div>
+            <div class="bottom-left">{{ text["services.brief.barking"] }}</div>
         </div>
+
+        <!--Digging-->
+        <div class="service">
+            <a href="digging"><img src="/static/src/photos/kyldig.jpg" class="img-fluid" alt="Kylling digging"
+                    id="serviceimg"></a>
+            <div class="top-left"><b>{{ text["services.title.digging"] }}</b></div>
+            <div class="bottom-left">{{ text["services.brief.digging"] }}</div>
+        </div>
+
+        <!--Ball reminders-->
+        <div class="service">
+            <a href="ballreminders"><img src="/static/src/photos/ballremind.jpg" class="img-fluid"
+                    alt="Extermination image" id="serviceimg"></a>
+            <div class="top-left"><b>{{ text["services.title.ballreminders"] }}</b></div>
+            <div class="bottom-left">{{ text["services.brief.ballreminders"] }}</div>
+        </div>
+
+    </div>
+
+    <div class="catalogue">
+
+
+
+
+
+        <!--Pulling-->
+        <div class="service">
+            <a href="pulling"><img src="/static/src/photos/kylpull.jpg" class="img-fluid" alt="Responsive image"
+                    id="serviceimg"></a>
+            <div class="top-left"><b>{{ text["services.title.pulling"] }}</b></div>
+            <div class="bottom-left">{{ text["services.brief.pulling"] }}</div>
+        </div>
+
+        <!--Biting-->
+        <div class="service">
+            <a href="biting"><img src="/static/src/photos/Kylbite.JPG" class="img-fluid" alt="Responsive image"
+                    id="serviceimg"></a>
+            <div class="top-left"><b>{{ text["services.title.biting"] }}</b></div>
+            <div class="bottom-left">{{ text["services.brief.biting"] }}</div>
+        </div>
+
+        <!--Chilling-->
+        <div class="service">
+            <a href="chilling"><img src="/static/src/photos/Kylling.jpg" class="img-fluid" alt="Responsive image"
+                    id="serviceimg"></a>
+            <div class="top-left"><b>{{ text["services.title.chilling"] }}</b></div>
+            <div class="bottom-left">{{ text["services.brief.chilling"] }}</div>
+        </div>
+
+    </div>
+
+</div>
+
+</div>
 
 
 

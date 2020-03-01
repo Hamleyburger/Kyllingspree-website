@@ -15,7 +15,7 @@ def setLan(lanc):
 
 def getText(lan_code):
     if (lan_code in validLan):
-        with open('dict.{}.csv'.format(lan_code), newline='') as csvfile:
+        with open('application/static/csvs/dict.{}.csv'.format(lan_code), newline='') as csvfile:
             textreader = csv.reader(csvfile, delimiter='$')
             for row in textreader:
                     myText[row[0]] = row[1]

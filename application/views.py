@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 from application import app
-from flask import Flask, jsonify, redirect, render_template, request, url_for
+from flask import Flask, jsonify, redirect, render_template, request, url_for, session
 
 import texts
 import smtplib
@@ -9,13 +9,12 @@ import config as cfg
 
 #Load text in the right language:texts.getText("")
 
-lan = texts.lan_code
-print(lan)
 
 @app.route("/")
 def index():
     lan_code = request.args.get("language")
-    texts.setLan(lan_code)
+    if lan_code:
+        session['lan_code'] = lan_code
     return render_template("index.html")
 
 
@@ -73,3 +72,4 @@ def sendMail(usermessage, usersubject, useremail):
         smtp.sendmail(sender_email, rec_email, msg)
 
 
+        

@@ -1,8 +1,13 @@
+from application import app
+
 #!/usr/bin/env python
 
 """remove 'example' extension of this file
 and add appropriate e-mails and passwords
-to the dictionary below:"""
+to the dictionary below. Also provide a secret key of your own choice:"""
+
+# Input secret key below. This isn't actually my secret key.
+app.config["SECRET_KEY"] = "pick your secret key - it must be very secret!"
 
 mySecrets = {'sender_email': 'foo',
             'password': 'bar',

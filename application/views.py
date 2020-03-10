@@ -16,6 +16,7 @@ def index():
     lan_code = request.args.get("language")
     if lan_code:
         session['lan_code'] = lan_code
+        print("lan_code is set to: {} from views.py '/'".format(session['lan_code']))
     return render_template("index.html")
 
 

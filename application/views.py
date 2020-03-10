@@ -12,7 +12,6 @@ import config as cfg
 
 @app.route("/")
 def index():
-    print(app.config)
     lan_code = request.args.get("language")
     if lan_code:
         session['lan_code'] = lan_code

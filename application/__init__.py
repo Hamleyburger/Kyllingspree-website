@@ -11,5 +11,4 @@ import config
 @app.context_processor
 def context_processor():
     text = getSessionText()
-    print(session)
     return dict(text=text)

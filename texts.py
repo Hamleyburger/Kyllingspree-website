@@ -8,11 +8,6 @@ myText = {}
 validLan = ['en', 'da']
 lan_code = "en"
 
-def setLan(lanc):
-    global lan_code
-    lan_code = lanc
-
-
 def getText(lan_code):
     if (lan_code in validLan):
         with open('application/static/csvs/dict.{}.csv'.format(lan_code), newline='') as csvfile:
@@ -25,13 +20,6 @@ def getText(lan_code):
     else:
         print("Language: {} - does not exits. You get English (en)!".format(lan_code))
         return(getText("en"))
-
-def translatedText():
-    return getText(lan_code)
-
-
-
-
 
 
 """

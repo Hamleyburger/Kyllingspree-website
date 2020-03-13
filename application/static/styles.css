@@ -7,6 +7,10 @@ body {
   padding-top: 83px;
 }
 
+body.tomatobody {
+  background-color: tomato;
+}
+
 .container {
   padding: 0;
 }
@@ -53,6 +57,9 @@ body {
   text-align: center;
   width: 50%;
   /*border: 1px solid black;*/
+  text-align: center;
+  width: 50%;
+  /*border: 1px solid black;*/
 }
 
 #navlist > li {
@@ -69,6 +76,15 @@ body {
 }
 
 #navlist > li:hover {
+  border: 2px solid #59746c;
+  background-color: #afdbce;
+}
+
+.navbar-brand {
+  margin-right: auto;
+}
+
+.navbar-brand:hover {
   border: 2px solid #59746c;
   background-color: #afdbce;
 }

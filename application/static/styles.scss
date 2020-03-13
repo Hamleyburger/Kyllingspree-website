@@ -35,6 +35,7 @@ body {
 
 .mynav{
 
+    
     background-color: rgba(147, 213, 193, 0.8);
     background-size: cover;
     background-position: top;
@@ -63,6 +64,10 @@ body {
  width: 50%;
  /*border: 1px solid black;*/
 
+    text-align: center;
+    width: 50%;
+    /*border: 1px solid black;*/
+    
 }
 
 
@@ -84,7 +89,45 @@ body {
 }
 .navbar-brand {
  margin-right: auto;
+
+
+    
+    &:hover{
+        border: 2px solid rgb(89, 116, 108);
+        background-color: rgb(175, 219, 206);
+    }
 }
+
+
+.navbar-brand {
+    margin-right: auto;
+}
+
+
+
+
+
+.btn-circle.btn-md {
+    background-image: url(tomato.png);
+    background-color: transparent;
+    background-size: 93%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-position-y: -2px;
+    width: 50px; 
+    height: 50px; 
+    padding: 7px 10px; 
+    border-radius: 25px; 
+    font-size: 10px; 
+    text-align: center;
+    align-self: center;
+
+    &:hover{
+        background-size: 102%;
+        background-position-y: -4px;
+    }
+} 
+
 
 #burgericon {
     border: 2px solid rgba(0,0,0,0);

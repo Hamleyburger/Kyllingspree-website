@@ -5,6 +5,8 @@ from application import views
 
 
 myText = {}
+
+# Keep this list updated if you add more translations:
 validLan = ['en', 'da']
 lan_code = "en"
 
@@ -22,11 +24,3 @@ def getText(lan_code):
         return(getText("en"))
 
 
-"""
-mydict = {'nav.service': 'tjenester', 'nav.contact': 'kontakt', 'nav.pricing': 'priser'}
-# For python 2, skip the "newline" argument: open('dict.csv','w")
-with open('dict.csv', 'w', newline="") as csv_file:  
-    writer = csv.writer(csv_file, delimiter = '$')
-    for key, value in mydict.items():
-       writer.writerow([key, value])
-"""

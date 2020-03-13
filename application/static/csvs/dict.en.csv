@@ -34,3 +34,4 @@ contact.email.invalid$You must provide your e-mail
 contact.subject.invalid$You must provide a subject
 contact.message.invalid$You must write a message
 contact.send$Send
+submitted.alert$This message has actually been sent! LOL!

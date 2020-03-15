@@ -16,7 +16,7 @@ body {
 
 body.tomatoColour {
   --bodyBackground: rgb(255, 98, 93);
-  --darkerBackground: rgb(209, 38, 15);
+  --darkerBackground: rgba(209, 38, 15, 0.8);
   --darkBorder: rgb(105, 18, 18);
   --bodyBackgroundHover: rgb(255, 154, 108);
   --serviceTextBackground: rgba(255, 192, 192, 0.5);

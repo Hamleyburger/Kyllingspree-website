@@ -1,14 +1,30 @@
 :root {
     --max-content-width: 700px;
-  }
+    --bodyBackground: rgb(185, 229, 216);
+    --darkerBackground: rgba(147, 213, 193, 0.8);
+    --darkBorder: rgb(89, 116, 108);
+    --bodyBackgroundHover: rgb(175, 219, 206);
+    --serviceTextBackground: rgba(192, 255, 230, 0.5);
+    --highlightedBackground: rgb(228, 244, 239);
+    --serviceBackground: rgb(85, 201, 252);
+    
+    
+}
 
 body {
-            background-color: rgb(185, 229, 216);
-            padding-top: 83px;
-            // this class is for turning the body tomato coloured. Just in case!
-            &.tomatobody {
-                background-color: tomato;
-            }
+    background-color: var(--bodyBackground);
+    padding-top: 83px;
+    &.tomatoColour {
+        
+        // this class is for turning the body tomato coloured. Just in case!
+        --bodyBackground: rgb(255, 98, 93);
+        --darkerBackground: rgb(209, 38, 15);
+        --darkBorder: rgb(105, 18, 18);
+        --bodyBackgroundHover: rgb(255, 154, 108);
+        --serviceTextBackground: rgba(255, 192, 192, 0.5);
+        --highlightedBackground: rgb(244, 228, 228);
+        --serviceBackground: rgb(156, 76, 93);
+    }
 }
 
 .container {
@@ -36,7 +52,7 @@ body {
 .mynav{
 
     
-    background-color: rgba(147, 213, 193, 0.8);
+    background-color: var(--darkerBackground);
     background-size: cover;
     background-position: top;
     /*overflow: hidden;*/
@@ -45,7 +61,7 @@ body {
 
 #myfooter{
     color: #555;
-    background-color: rgba(147, 213, 193, 0.8);
+    background-color: var(--darkerBackground);
     background-size: cover;
     background-position: top;
     overflow: hidden;
@@ -72,10 +88,10 @@ body {
 
 
 #navlist > li {
-    border: 2px solid rgb(89, 116, 108);
+    border: 2px solid var(--darkBorder);
     width: 125px;
     align-self: center;
-    background-color: rgb(185, 229, 216);
+    background-color: var(--bodyBackground);
     font-size: 20px;
     font-family: 'courier new';
     font-weight: bold;
@@ -83,19 +99,13 @@ body {
 }
 
 #navlist > li:hover {
-    border: 2px solid rgb(89, 116, 108);
-    background-color: rgb(175, 219, 206);
+    border: 2px solid var(--darkBorder);
+    background-color: var(--bodyBackgroundHover);
 
 }
 .navbar-brand {
  margin-right: auto;
 
-
-    
-    &:hover{
-        border: 2px solid rgb(89, 116, 108);
-        background-color: rgb(175, 219, 206);
-    }
 }
 
 
@@ -171,7 +181,7 @@ This seems to make no difference*/
  #allcatalogues{
 
   padding: 10px 20px 10px 20px;
-  background-color: rgba(147, 213, 193, 0.8);
+  background-color: var(--darkerBackground);
 
  }
 
@@ -202,7 +212,7 @@ This seems to make no difference*/
  margin-bottom: 20px;
  margin-top: 20px;
  overflow: hidden;
- background-color: rgb(85, 201, 252);
+ background-color: var(--serviceBackground);
 
  /* flex basis is a flexy name for width*/
 }
@@ -240,12 +250,12 @@ opacity: 1;
   padding-left: 10px;
   padding-right: 7px;
   font-size: large;
-   background-color: rgba(192, 255, 230, 0.4);
+   background-color: var(--serviceTextBackground);
 
 }
 /* Bottom left text */
 .bottom-left {
-    background-color: rgba(192, 255, 230, 0.5);
+    background-color: var(--serviceTextBackground);
   position: absolute;
   bottom: 6px;
   right: 0px;
@@ -278,28 +288,31 @@ opacity: 1;
 }
 #contactSubmitBtn
 {
-    background: green;
 
-color: white;
 
-border-style: outset;
-border-radius: 5%;
+    border-radius: 0%;
+    
+    height: 50px;
+    width: 100px;
 
-border-color: #0066A2;
+    
+    
+    color: rgba(0,0,0,.5);
+    font: bold 15px courier new, sans-serif;
+    text-shadow:none;
 
-height: 50px;
+    border: 2px solid var(--darkBorder);
+    background-color: var(--darkerBackground);
+    font-size: 20px;
+    font-family: 'courier new';
+    font-weight: bold;
 
-width: 100px;
-
-font: bold 15px courier new, sans-serif;
-
-text-shadow:none;
 }
 
 
 
 #pricingtable td{
-border: 2px solid rgb(89, 116, 108);
+border: 2px solid var(--darkBorder);
 border-collapse: collapse;
 padding-left: 10px;
 padding-right: 10px;
@@ -309,7 +322,7 @@ padding-right: 10px;
 #pricingtable{
     margin-top: 40px;
     margin-bottom: 40px;
-    background-color: rgb(228, 244, 239);
+    background-color: var(--highlightedBackground);
 }
 
 
@@ -321,8 +334,8 @@ padding-right: 10px;
     margin: 0;
 }
 .mycol{
-    border: 2px solid rgb(89, 116, 108);
+    border: 2px solid var(--darkBorder);
     padding: 20px;
-    background-color: rgb(228, 244, 239);
+    background-color: var(--highlightedBackground);
 
 }
